@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil ArNovh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg,
+        #0b0b0b 0%,
+        #1a1a1a 25%,
+        #8b0000 55%,
+        #ffffff 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .wrapper { width: 100%; max-width: 1100px; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-bottom: 34px;
+    }
+
+    nav button {
+      border: none;
+      padding: 12px 26px;
+      border-radius: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      background: linear-gradient(145deg, #8b0000, #1a1a1a);
+      box-shadow:
+        0 10px 0 #3a0000,
+        0 18px 30px rgba(0,0,0,0.45);
+      transition: all 0.25s ease;
+    }
+
+    nav button:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(145deg, #b30000, #2b2b2b);
+      box-shadow:
+        0 14px 0 #3a0000,
+        0 26px 40px rgba(0,0,0,0.55);
+    }
+
+    nav button:active,
+    nav button.active {
+      transform: translateY(6px);
+      box-shadow:
+        0 4px 0 #4b5bd6,
+        0 10px 20px rgba(0,0,0,0.3);
+      background: linear-gradient(145deg, #ffffff, #e9ebff);
+      color: #4b5bd6;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.96);
+      border-radius: 26px;
+      padding: 54px;
+      box-shadow:
+        0 40px 80px rgba(0,0,0,0.45),
+        0 14px 30px rgba(0,0,0,0.25);
+      animation: float 6s ease-in-out infinite;
+      backdrop-filter: blur(6px);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.9rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #5f72ff, #8fd3f4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    h2 { font-size: 1.2rem; color: #777; margin-bottom: 38px; }
+
+    section { display: none; }
+    section.active { display: block; }
+
+    .info p { margin-bottom: 12px; font-size: 1rem; }
+
+    ul { list-style: none; margin-top: 10px; }
+
+    ul li {
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      padding: 16px 20px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 46px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 34px; }
+      h1 { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <button class="active" onclick="showPage('home', this)">Home</button>
+      <button onclick="showPage('profil', this)">Profil</button>
+      <button onclick="showPage('prestasi', this)">Prestasi</button>
+    </nav>
+
+    <div class="card">
+      <section id="home" class="active">
+        <h1>ArNovh</h1>
+        <h2>Website Profil Atlet Pelajar</h2>
+        <p>Website profil pribadi ArNovh dengan latar lintasan atletik, desain melayang, dan tombol 3D modern.</p>
+      </section>
+
+      <section id="profil" class="info">
+        <h1>Profil Diri</h1>
+        <p><strong>Nama:</strong> ArNovh</p>
+        <p><strong>Usia:</strong> 17 Tahun</p>
+        <p><strong>Status:</strong> Pelajar</p>
+        <p><strong>Jenis Kelamin:</strong> Kali-kali</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Bandung, 28 Juli 2009</p>
+      </section>
+
+      <section id="prestasi">
+        <h1>Prestasi</h1>
+        <ul>
+          <li>🥈 Juara 2 Pencak Silat PORJAR 2024</li>
+          <li>🥈 Juara 2 Pencak Silat Mangupura Cup 2023</li>
+          <li>🥉 Juara 3 Pencak Silat PORJAR 2023</li>
+          <li>🥉 Juara 3 Atletik Estafet Putra 4x100m (47 detik)</li>
+          <li>🥉 Juara 3 Atletik Estafet Putra 4x400m (3 menit)</li>
+        </ul>
+      </section>
+
+      <footer>© 2026 ArNovh · Athletic 3D Floating Design</footer>
+    </div>
+  </div>
+
+  <script>
+    function showPage(pageId, btn) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

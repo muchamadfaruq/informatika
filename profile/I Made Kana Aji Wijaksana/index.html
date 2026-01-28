@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profil - I Made Kana Aji Wijaksana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #020617; color: white; font-family: 'Inter', sans-serif; }
+        .blue-gradient { background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); }
+        .ktp-bg { background-color: #ff0000; border: 3px solid white; }
+        .card-dark { background-color: #0f172a; border: 1px solid #1e293b; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-black text-blue-500 tracking-tighter text-xl">KANA.AJI</span>
+            <div class="space-x-6 text-xs font-bold uppercase tracking-widest">
+                <a href="#profil" class="hover:text-blue-400 transition">Profil</a>
+                <a href="#akademik" class="hover:text-blue-400 transition">Akademik</a>
+                <a href="#target" class="hover:text-blue-400 transition">Target</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profil" class="pt-32 pb-20 px-6">
+        <div class="max-w-md mx-auto card-dark rounded-[2.5rem] shadow-2xl overflow-hidden">
+            <div class="blue-gradient h-32 flex items-center justify-center">
+                <h2 class="text-white font-black tracking-[0.3em] uppercase">Student Identity</h2>
+            </div>
+            <div class="px-8 pb-10">
+                <div class="relative -mt-16 flex justify-center mb-6">
+                    <div class="ktp-bg w-32 h-40 rounded-lg overflow-hidden shadow-2xl">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCUFvS-n7B6zg1XGysGLMSA7Gx-ZSbZOzyw&s" alt="CR7 KTP" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-2xl font-black text-white uppercase leading-tight">I Made Kana Aji Wijaksana</h1>
+                    <p class="text-blue-400 text-xs font-bold mt-2 uppercase tracking-widest">SMA Negeri 2 Mengwi</p>
+                </div>
+                <div class="mt-8 space-y-3">
+                    <div class="flex justify-between p-3 bg-white/5 rounded-xl text-sm">
+                        <span class="text-blue-400 font-bold uppercase text-[10px]">Lahir</span>
+                        <span class="font-medium">Mangupura, 15-01-2009</span>
+                    </div>
+                    <div class="flex justify-between p-3 bg-white/5 rounded-xl text-sm">
+                        <span class="text-blue-400 font-bold uppercase text-[10px]">Gender</span>
+                        <span class="font-medium">Laki-Laki</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="akademik" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center space-x-4 mb-10">
+                <div class="h-1 w-12 bg-blue-600"></div>
+                <h2 class="text-3xl font-black uppercase tracking-tighter italic">Fokus Akademik (IPA)</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 card-dark rounded-3xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-atom text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Fisika & Kimia</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Mempelajari hukum alam, energi, dan struktur materi secara mendalam di kelas IPA.</p>
+                </div>
+                <div class="p-6 card-dark rounded-3xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-dna text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Biologi</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Eksplorasi makhluk hidup dan ekosistem di lingkungan sekitar Mengwi.</p>
+                </div>
+                <div class="p-6 card-dark rounded-3xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-calculators text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-white mb-2">Matematika</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Asah logika dan pemecahan masalah kompleks melalui perhitungan presisi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="target" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <i class="fas fa-quote-left text-blue-900 text-6xl mb-6"></i>
+            <h2 class="text-4xl font-black text-white mb-6 uppercase tracking-tighter">"Siuuu! Kerja keras mengalahkan bakat."</h2>
+            <div class="inline-block p-1 px-6 bg-blue-600 rounded-full text-xs font-black uppercase tracking-widest">Target 2026: Lulus dengan Nilai Terbaik</div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/5 text-center">
+        <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">
+            Dibuat oleh I Made Kana Aji Wijaksana &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>

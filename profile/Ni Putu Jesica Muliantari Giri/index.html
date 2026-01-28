@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Siswa | Jesica Muliantari</title>
+    <style>
+        :root {
+            --deep-pink: #ec407a;
+            --soft-pink: #fce4ec;
+            --accent-pink: #f06292;
+            --white: #ffffff;
+            --text-gray: #4f4f4f;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--soft-pink);
+            color: var(--text-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background: var(--white);
+            width: 90%;
+            max-width: 400px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(236, 64, 122, 0.2);
+            text-align: center;
+            padding-bottom: 30px;
+            border: 5px solid var(--white);
+            margin: 20px 0;
+        }
+
+        .upper-section {
+            background: linear-gradient(135deg, var(--deep-pink), var(--accent-pink));
+            height: 120px;
+            margin-bottom: 70px;
+        }
+
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid var(--white);
+            margin: 0 auto;
+            position: relative;
+            top: -70px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            margin-top: -55px;
+            padding: 0 25px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+            color: var(--deep-pink);
+            margin-bottom: 5px;
+        }
+
+        .school-name {
+            font-weight: 600;
+            color: var(--accent-pink);
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .info-box {
+            background: var(--soft-pink);
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .info-box:hover {
+            transform: scale(1.02);
+            background: #f8d7e4;
+        }
+
+        .label {
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: var(--deep-pink);
+            text-transform: uppercase;
+        }
+
+        .value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-gray);
+        }
+
+        .hobby-section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px dashed var(--accent-pink);
+            border-radius: 15px;
+        }
+
+        .hobby-title {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--deep-pink);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .hobby-tag {
+            background: var(--accent-pink);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+        }
+
+        .footer-note {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #b0b0b0;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="upper-section"></div>
+    
+    <div class="profile-img-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BNzAwOTJlZWYtMGZjMy00ZDc3LWFkMTItODAyZTkzZTJlNzMyXkEyXkFqcGc@._V1_.jpg" alt="Jesica Muliantari">
+    </div>
+
+    <div class="content">
+        <h1>Jesica Muliantari</h1>
+        <span class="school-name">SMA Negeri 2 Mengwi</span>
+
+        <div class="info-box">
+            <span class="label">Kelas</span>
+            <span class="value">XI B3</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">Tgl Lahir</span>
+            <span class="value">12 September 2008</span>
+        </div>
+
+        <div class="info-box">
+            <span class="label">Gender</span>
+            <span class="value">Perempuan</span>
+        </div>
+
+        <div class="hobby-section">
+            <span class="hobby-title">Hobi & Kesukaan</span>
+            <span class="hobby-tag">📺 Menonton Drama</span>
+        </div>
+
+        <p class="footer-note">"Enjoying every episode of life ✨"</p>
+    </div>
+</div>
+
+</body>
+</html>

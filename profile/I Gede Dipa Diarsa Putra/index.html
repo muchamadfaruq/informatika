@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya | I Gede Dipa Diarsa Putra</title>
+    <style>
+        /* Gaya Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Latar belakang biru muda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Kartu Profil */
+        .profile-card {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            border-top: 8px solid #1976d2; /* Aksen biru tua */
+        }
+
+        /* Bagian Foto */
+        .photo-container {
+            margin-top: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #bbdefb;
+        }
+
+        /* Informasi Teks */
+        .info {
+            padding: 20px 30px 40px;
+        }
+
+        h1 {
+            color: #0d47a1;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .school {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .details-table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .details-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+
+        .label {
+            color: #1976d2;
+            font-weight: bold;
+            width: 40%;
+        }
+
+        /* Tombol Sapaan */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 25px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="photo-container">
+            <img src="https://png.pngtree.com/png-vector/20240112/ourmid/pngtree-simple-fish-image-png-image_11436068.png" alt="Foto I Gede Dipa Diarsa Putra" class="profile-img">
+        </div>
+
+        <div class="info">
+            <h1>I Gede Dipa Diarsa Putra</h1>
+            <p class="school">Siswa SMA NEGERI 2 MENGWI</p>
+
+            <table class="details-table">
+                <tr>
+                    <td class="label">Jenis Kelamin</td>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <td class="label">Alamat</td>
+                    <td>Dauh Rurung</td>
+                </tr>
+                <tr>
+                    <td class="label">Tanggal Lahir</td>
+                    <td>04 Desember 2008</td>
+                </tr>
+                <tr>
+                    <td class="label">Hobi</td>
+                    <td>Main Catur ♟️</td>
+                </tr>
+                <tr>
+                    <td class="label">Status</td>
+                    <td>Pelajar Aktif</td>
+                </tr>
+            </table>
+
+            <a href="#" class="btn">Kirim Pesan</a>
+        </div>
+    </div>
+
+</body>
+</html>

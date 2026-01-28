@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Turah Dika</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #2ecc71, #3498db);
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    /* Pura Bali Background Full Width */
+    .pura-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.25;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Ornamen Bali di kiri & kanan */
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background: linear-gradient(180deg, rgba(46,204,113,0.6), rgba(52,152,219,0.6));
+      -webkit-mask-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Bali_ornament_pattern.svg');
+      mask-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Bali_ornament_pattern.svg');
+      mask-repeat: repeat-y;
+      -webkit-mask-repeat: repeat-y;
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      opacity: 0.8;
+    }
+
+    body::before { left: 0; }
+    body::after { right: 0; transform: scaleX(-1); }
+
+    .card {
+      width: 90%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      opacity: 0.8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Pura Bali Image -->
+  <img src="https://travelandtrip.com/storage/temp/public/add/2e1/127620a0dd9802b5526765162__1600.jpg" alt="Pura Bali" class="pura-image" />
+  <div class="card">
+    
+
+    <h1>Anak Agung Ngurah Mahardikajaya</h1>
+    <h2>(Turah Dika)</h2>
+
+    <div class="info">
+      <div class="info-item"><span>Umur:</span> 15 Tahun</div>
+      <div class="info-item"><span>Tempat Tinggal:</span> Bali, Kapal</div>
+      <div class="info-item"><span>Status:</span> Anak SMA (SMAN 2 Mengwi)</div>
+      <div class="info-item"><span>Makanan Favorit:</span> Ayam Goreng 🍗</div>
+    </div>
+
+    <footer>
+      Profil Pribadi • Desain Hijau ke Biru
+    </footer>
+  </div>
+</body>
+</html>
